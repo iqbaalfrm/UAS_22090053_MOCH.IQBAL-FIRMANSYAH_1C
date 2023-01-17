@@ -1,0 +1,70 @@
+import java.util.ArrayList;
+
+public class belanja {
+
+
+    private String NamaBarang;
+    private int HargaBarang;
+    private int JumlahBarang;
+
+    public String getNamaBarang() {
+        return NamaBarang;
+    }
+
+    public void setNamaBarang(String namaBarang) {
+        NamaBarang = namaBarang;
+    }
+
+    public int getHargaBarang() {
+        return HargaBarang;
+    }
+
+    public void setHargaBarang(int hargaBarang) {
+        HargaBarang = hargaBarang;
+    }
+
+    public int getJumlahBarang() {
+        return JumlahBarang;
+    }
+
+    public void setJumlahBarang(int jumlahBarang) {
+        JumlahBarang = jumlahBarang;
+    }
+
+    public belanja() {
+
+    }
+
+    public belanja(String NamaBarang, Integer HargaBarang, Integer JumlahBarang) {
+        this.NamaBarang = NamaBarang;
+        this.HargaBarang = HargaBarang;
+        this.JumlahBarang = JumlahBarang;
+
+    }
+
+    public Object cetakInvoice(ArrayList<belanja> barang){
+        int total = getHargaBarang() * getJumlahBarang();
+        for (belanja ignored : barang) {
+            for (belanja item : barang) {
+                System.out.println("----- Daftar Belanja -----");
+                System.out.println("Nama Barang = " +getNamaBarang());
+                System.out.println("Harga Barang = " +getHargaBarang());
+                System.out.println("Total Harga = ");
+            }
+    }
+        return null;
+    }
+
+    private int harga() {
+        return harga();
+    }
+
+    private String nama(){
+        return nama();
+    }
+
+    private int jumlah(){
+        return jumlah();
+    }
+}
+
